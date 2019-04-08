@@ -35,7 +35,7 @@ public class CalcAlgs{
             return -0; //I have to return an integer of some type, and I chose 0
         }
     }
-
+    //has to be static to access the NullPointerException n
     static public double getMean(int[] a){ //has to be a double because you say so/an average often is one
         try{
             if (a.length==0){
