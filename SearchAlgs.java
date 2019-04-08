@@ -44,8 +44,11 @@ public class SearchAlgs{
 
     public static void main(String[] args){
         int[] test = {1,2,3,4,5,6,7,8,9,10};
+        int[] test1 = {5,10,2,4,8,7,13};
         SearchAlgs t = new SearchAlgs();
-        System.out.println("It's in spot "+t.findAValue(test, 13));
-        System.out.println("Binary found "+t.binaryFindValue(test, 13));
+        System.out.println("The boring way found it in spot "+t.findAValue(test, 13));
+        System.out.println("Binary found it in spot "+t.binaryFindValue(test, 13));
+        System.out.println("The boring way found it in spot "+t.findAValue(test1, 13));
+        System.out.println("Binary found it in spot "+t.binaryFindValue(test1, 13));
     }
 }

@@ -18,8 +18,8 @@ public class CalcAlgs{
         } 
     }
 
-    public int getMin(int[] a){
-        try{
+    public int getMin(int[] a){ //Honestly not sure if I need this, but I did the work so I figured why not
+        try{ //Operates exactly the same as getMax but the variable name is minValue and its a < instead of a >
             if (a.length==0){
                 throw n; //Makes the NullPointerException happen
             }
@@ -62,7 +62,7 @@ public class CalcAlgs{
         int[] a3 = {1,1,1,1,1,1,1,1,2};
         int[] a4 = {-152, -15, -3, -151, -19, 0};
         CalcAlgs test = new CalcAlgs();
-        System.out.println("Maximum = "+test.getMax(new int[] {}));
+        System.out.println("Maximum = "+test.getMax(new int[] {})); //made this to test the empty array response for getMax
         System.out.println("Maximum1 = "+test.getMax(t1));
         System.out.println("Maximum2 = "+test.getMax(t2));
         System.out.println("Maximum3 = "+test.getMax(t3));
